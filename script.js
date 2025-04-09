@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			localStorage.removeItem('password');
 		
 		}
-		alert('Logged in Successfully');
+		alert(`Logged in as ${username}`);
 	});	
 });
