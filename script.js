@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const username = usernameInput.value;
         const password = passwordInput.value;
         
-        alert(Logged in as ${username.value});
+        alert(Logged in as ${username});
         
         if (checkbox.checked) {
             localStorage.setItem('username', username);
@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         checkSavedCredentials();
     });
-existingBtn.addEventListener('click', function() {
+
+ existingBtn.addEventListener('click', function() {
         const savedUsername = localStorage.getItem('username');
         if (savedUsername) {
-            alert(Logged in as ${savedUsername.value});
+            alert(Logged in as ${savedUsername});
         }
     });
 
